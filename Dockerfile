@@ -27,6 +27,8 @@ RUN mv data /data \
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
+RUN chmod -R 777 /data /docker-java-home /etc /home /media /mnt /opt /run /tmp /var
+
 # EXPOSE 7474 7473
 EXPOSE 7474
 

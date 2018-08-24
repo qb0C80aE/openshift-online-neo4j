@@ -1,5 +1,8 @@
 #!/bin/bash -eu
 
+export PATH=/var/lib/neo4j/bin:$PATH
+cd /var/lib/neo4j
+
 setting() {
     setting="${1}"
     value="${2}"
